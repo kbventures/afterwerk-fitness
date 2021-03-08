@@ -450,11 +450,27 @@
       <div class="container">
         <div class="content">
           <div class="box form wow slideInLeft">
-            <form>
-              <input type="text" placeholder="Enter Name" />
-              <input type="text" placeholder="Enter Email" />
-              <input type="text" placeholder="Enter Mobile" />
-              <textarea placeholder="Enter Message"></textarea>
+            <form name="contact" method="POST" data-netlify="true">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Name"
+              />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter Email"
+              />
+              <input
+                type="text"
+                name="mobile"
+                id="mobile"
+                placeholder="Enter Mobile"
+              />
+              <textarea name="message" placeholder="Enter Message"></textarea>
+              <div data-netlify-recaptcha="true"></div>
               <button type="submit">Send Message</button>
             </form>
           </div>
